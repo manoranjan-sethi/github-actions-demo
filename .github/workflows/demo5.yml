@@ -1,0 +1,9 @@
+name: Push Triggered Workflow
+on: push
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Build step
+          run: echo "this is a build job"
