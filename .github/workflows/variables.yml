@@ -1,0 +1,17 @@
+name: Push Triggered Workflow on Specific Branch
+on: 
+    push:
+        branches:
+            - main
+            - develop
+            - release/**
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Build step
+          run: echo "Hi All. My anme is {var.My_Name}"
