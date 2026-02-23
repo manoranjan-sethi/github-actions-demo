@@ -1,0 +1,13 @@
+#multiple shell commands execution
+
+name: Multiple Shell Commands
+on: workflow_dispatch
+
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Multiple Shell Commands
+              run: |
+                echo "welcome to github actions"
+                echo "this is a demo for multiple shell commands execution"
