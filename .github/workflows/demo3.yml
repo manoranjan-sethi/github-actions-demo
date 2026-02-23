@@ -1,4 +1,4 @@
-name: Multi Job
+name: Multi Job Parallel Execution
 on: workflow_dispatch
 
 jobs:
