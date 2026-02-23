@@ -1,0 +1,11 @@
+name: Hello World
+
+# Triggers
+on: workflow_dispatch # manual trigger
+
+jobs:
+  hello: #name of the job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello step
+        run: echo "welcome to github actions"
